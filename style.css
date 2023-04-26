@@ -4,10 +4,62 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    border: none;
+    /* border: none; */
+}
+
+:root {
+    font-size: 62.5%;
 }
 
 body {
     background-color: hsl(185, 41%, 84%);
+    font-size: 1.6rem;
+    width: 37.5rem;
+    margin: 0 auto;
+    font-family: 'Space Mono', monospace;
+}
+
+.logo {
+    display: block;
+    margin: 6rem auto;
+}
+
+.main {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 6rem;
+}
+
+.firstSection {
+
+}
+
+.bill, .selectTip, .numberOfPeople {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.alignPeopleAndMessage {
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondSection {
+    background-color: hsl(183, 100%, 15%);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.alignTextResult {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+footer {
+    text-align: center;
 }
 

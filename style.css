@@ -61,9 +61,21 @@ label, .selectTip p {
     text-align: center;
 }
 
+.selectTip .tipValues a:hover {
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+    transition: 0.3s;
+}
+
 .selectTip .tipValues .btnCustom {
     background-color: hsl(185, 41%, 84%);
     color: hsl(183, 100%, 15%);
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 16rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
     /* filter: opacity(40%); */
 }
 
@@ -97,6 +109,11 @@ input {
 /* Search about the solution above: 
 https://pt.stackoverflow.com/questions/541540/colocar-imagem-em-input-em-html-e-css */
 
+#alertMessage {
+    color: red;
+    
+}
+
 .alignPeopleAndMessage {
     display: flex;
     justify-content: space-between;
@@ -125,8 +142,14 @@ https://pt.stackoverflow.com/questions/541540/colocar-imagem-em-input-em-html-e-
     font-size: 1.2rem;
 }
 
+#tipResult, #totalResult {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: hsl(172, 67%, 45%);
+}
+
 .buttonReset {
-    background-color: hsl(172, 67%, 45%);
+    background-color: hsl(183, 100%, 19%);
     color: hsl(183, 100%, 15%);
     border-radius: 0.5rem;
     padding: 1rem;

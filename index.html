@@ -32,34 +32,34 @@
                     <a href="">15%</a>
                     <a href="">25%</a>
                     <a href="">50%</a>
-                    <a href="" class="btnCustom">Custom</a>
+                    <input class="btnCustom" type="number" placeholder="Custom">
                 </div>
             </div>
 
             <div class="numberOfPeople">
-                <div class="alignPeopleAndMessage">
+                <div class="alignPeopleAndMessage"> <!-- To align "label" with "alert message." -->
                     <label for="">Number of People</label>
-                    <div id="alertMessage">(Alert Text)</div>
+                    <div id="alertMessage"></div>
                 </div>
-                <input class="iconPerson" type="number" placeholder="0.00">
+                <input class="iconPerson" type="number" placeholder="0">
             </div>
         </section>
 
         <section class="secondSection">
-            <div class="alignTextResult">
+            <div class="alignTextResult">   <!-- To align "tip amount/total" with "result." -->
                 <div class="tipAmount">
                     <p>Tip Amount</p>
                     <span>/ person</span>
                 </div>
-                <div id="tipResult">($ Value)</div>
+                <div id="tipResult">$0.00</div>
             </div>
 
-            <div class="alignTextResult">
+            <div class="alignTextResult">   <!-- To align "tip amount/total" with "result." -->
                 <div class="total">
                     <p>Total</p>
                     <span>/ person</span>
                 </div>
-                <div id="totalResult">($ Value)</div>
+                <div id="totalResult">$0.00</div>
             </div>
 
             <a href="" class="buttonReset">RESET</a>

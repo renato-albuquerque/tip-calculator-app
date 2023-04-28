@@ -1,14 +1,15 @@
-let billValue = document.querySelector("#billValue")
-let billValue2 = Number(billValue.value)
+// Variables
 
-let qtyPerPerson = document.querySelector("#qtyPerPerson")
-let qtyPerPerson2 = Number(qtyPerPerson.value)
-
-let calc = (billValue2 + qtyPerPerson2)
-
-
-console.log(billValue2);
-console.log(qtyPerPerson2);
-console.log(calc);
-
+const inputBill = document.querySelector("#billValue");
+const btn5 = document.querySelector("#btn5");
+const btn10 = document.querySelector("#btn10");
+const btn15 = document.querySelector("#btn15");
+const btn25 = document.querySelector("#btn25");
+const btn50 = document.querySelector("#btn50");
+const inputCustom = document.querySelector(".inputCustom")
+const inputPeople = document.querySelector("#qtyPerPerson");
+const errorMessage = document.querySelector("#alertMessage");
+const tipResult = document.querySelector("#tipResult"); 
+const totalResult = document.querySelector("#totalResult");
+const btnReset = document.querySelector(".buttonReset")
 

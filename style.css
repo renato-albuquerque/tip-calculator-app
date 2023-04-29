@@ -177,3 +177,38 @@ footer a:hover {
     transition: .3s;
 }
 
+@media (min-width: 1400px) {
+    body {
+        width: 700px;
+    }
+    
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .firstSection {
+        width: 315px;
+    }
+
+    .secondSection {
+        width: 315px;
+        height: 300px;
+        border-radius: 1rem;
+    }
+
+    .selectTip .tipValues .btnPercentage {
+        width: 9.5rem;
+    }
+
+    .selectTip .tipValues .inputCustom {
+       width: 9.5rem; 
+    }
+
+    .buttonReset {
+        width: 27.5rem;
+        margin-top: 8rem;
+    }
+}

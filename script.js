@@ -13,9 +13,16 @@ const tipResult = document.querySelector("#tipResult");
 const totalResult = document.querySelector("#totalResult");
 const btnReset = document.querySelector(".buttonReset");
 
-let billAmount = Number(inputBill.value)
+/* let billAmount = Number(inputBill.value)
 let customPercent = Number(inputCustom.value)
-let numberPeople = Number(inputPeople.value)
+let numberPeople = Number(inputPeople.value) */
+
+function value5() {
+    btn5.style.backgroundColor = "hsl(185, 41%, 84%)"
+    btn5.style.color = "hsl(183, 100%, 15%)"
+    fivePercent = (5/100)
+    console.log(fivePercent);
+}
 
 
 

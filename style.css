@@ -59,6 +59,7 @@ label, .selectTip p {
     border-radius: 0.5rem;
     padding: 1rem;
     text-align: center;
+    cursor: pointer;
 }
 
 .selectTip .tipValues a:hover {
@@ -156,6 +157,7 @@ https://pt.stackoverflow.com/questions/541540/colocar-imagem-em-input-em-html-e-
     text-align: center;
     font-weight: 700;
     width: 29.5rem;
+    cursor: pointer;
 }
 
 footer {

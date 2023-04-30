@@ -11,6 +11,8 @@
     font-size: 62.5%;
 }
 
+/* Mobile First */
+
 body {
     background-color: hsl(185, 41%, 84%);
     font-size: 1.6rem;
@@ -88,7 +90,6 @@ input {
     color: hsl(183, 100%, 15%);
     font-size: 2.4rem;
     font-weight: 700;
-    /* filter: opacity(40%); */
 }
 
 .iconDollar {
@@ -113,6 +114,7 @@ https://pt.stackoverflow.com/questions/541540/colocar-imagem-em-input-em-html-e-
 #alertMessage {
     color: red;
     font-size: 1.4rem;
+    display: none;
 }
 
 .alignPeopleAndMessage {
@@ -176,6 +178,8 @@ footer a:hover {
     color:  hsl(172, 67%, 45%);
     transition: .3s;
 }
+
+/* Desktop Version */
 
 @media (min-width: 1400px) {
     body {

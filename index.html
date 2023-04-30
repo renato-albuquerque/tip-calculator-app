@@ -17,6 +17,8 @@
 <body>
     <img src="files/logo.svg" alt="Logo Splitter" class="logo">
 
+    <!-- First Section. -->
+    
     <main class="main">
         <section class="firstSection">
             <div class="bill">
@@ -27,7 +29,7 @@
             <div class="selectTip">
                 <p>Select Tip %</p>
                 <div class="tipValues">
-                    <button type="button" class="btnPercentage" id="btn5" onclick="value5()">5%</button>
+                    <button type="button" class="btnPercentage" id="btn5">5%</button>
                     <button type="button" class="btnPercentage" id="btn10">10%</button>
                     <button type="button" class="btnPercentage" id="btn15">15%</button>
                     <button type="button" class="btnPercentage" id="btn25">25%</button>
@@ -39,11 +41,13 @@
             <div class="numberOfPeople">
                 <div class="alignPeopleAndMessage"> <!-- To align "label" with "alert message." -->
                     <label for="qtyPerPerson">Number of People</label>
-                    <div id="alertMessage">Can't be zero</div>  <!-- class hide, display none. -->
+                    <div id="alertMessage">Can't be zero</div>  
                 </div>
                 <input class="iconPerson" id="qtyPerPerson" type="number" placeholder="0">
             </div>
         </section>
+
+        <!-- Second Section. -->
 
         <section class="secondSection">
             <div class="alignTextResult">   <!-- To align "tip amount/total" with "result." -->

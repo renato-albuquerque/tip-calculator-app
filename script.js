@@ -13,23 +13,11 @@ const tipResult = document.querySelector("#tipResult");
 const totalResult = document.querySelector("#totalResult");
 const btnReset = document.querySelector(".buttonReset");
 
-/* let billAmount = Number(inputBill.value)
-let customPercent = Number(inputCustom.value)
-let numberPeople = Number(inputPeople.value) */
-
-/* 
-let billValue = 0;
-let tipValue = 0; 
-let numberOfPeople = 0;
- */
-
-function getBillValue() {
+/* function getBillValue() {
     inputBill.addEventListener("change", function() {
         billValue = Number(inputBill.value)
     })
 }
-
-getBillValue()
 
 function getTip() {
 
@@ -37,51 +25,101 @@ function getTip() {
 
 function getTipCustom() {
 
+} */
+
+let billAmount, numPeople, customPercent, tipTotal, tipPerson, totalPerson;
+
+// FUNCTIONS
+
+function resetBtn() {
+    inputBill.value = "";
+    inputPeople.value = "";
+    inputCustom.value = "";
+    /* percentBtns.forEach(function(btn) {  // Check after.
+        btn.classList.remove("btnPercentageSelected");
+      }); */
+    errorMessage.classList.add("alertMessage");
+    tipResult.textContent = "$0.00";  
+    totalResult.textContent = "$0.00";    
 }
 
+// EVENTS
 
+inputPeople.addEventListener("change", function() {
+    numPeople = Number(inputPeople.value);
+    if (numPeople !== 0) {
+      errorMessage.classList.add("alertMessage");
+      /* inputPeople.classList.remove("empty"); */
+    } else if (numPeople === 0) {
+        errorMessage.classList.remove("alertMessage");
+      /* inputPeople.classList.add("empty"); */
+    }
+  });
 
-
-
-
-
-
-
+btnReset.addEventListener("click", resetBtn);
 
 btn5.addEventListener("click", function() {
-    errorMessage.classList.remove("alertMessage")
-    errorMessage.style.color = "red"
-    errorMessage.style.fontSize = "14px"
+    numPeople = Number(inputPeople.value);
+    if(numPeople === 0) {
+        errorMessage.classList.remove("alertMessage")
+        errorMessage.style.color = "red"
+        errorMessage.style.fontSize = "14px"
+    } else {
+        errorMessage.classList.add("alertMessage")
+    }
 })
 
 btn10.addEventListener("click", function() {
-    errorMessage.classList.remove("alertMessage")
-    errorMessage.style.color = "red"
-    errorMessage.style.fontSize = "14px"
+    numPeople = Number(inputPeople.value);
+    if(numPeople === 0) {
+        errorMessage.classList.remove("alertMessage")
+        errorMessage.style.color = "red"
+        errorMessage.style.fontSize = "14px"
+    } else {
+        errorMessage.classList.add("alertMessage")
+    }
 })
 
 btn15.addEventListener("click", function() {
-    errorMessage.classList.remove("alertMessage")
-    errorMessage.style.color = "red"
-    errorMessage.style.fontSize = "14px"
+    numPeople = Number(inputPeople.value);
+    if(numPeople === 0) {
+        errorMessage.classList.remove("alertMessage")
+        errorMessage.style.color = "red"
+        errorMessage.style.fontSize = "14px"
+    } else {
+        errorMessage.classList.add("alertMessage")
+    }
 })
 
 btn25.addEventListener("click", function() {
-    errorMessage.classList.remove("alertMessage")
-    errorMessage.style.color = "red"
-    errorMessage.style.fontSize = "14px"
+    numPeople = Number(inputPeople.value);
+    if(numPeople === 0) {
+        errorMessage.classList.remove("alertMessage")
+        errorMessage.style.color = "red"
+        errorMessage.style.fontSize = "14px"
+    } else {
+        errorMessage.classList.add("alertMessage")
+    }
 })
 
 btn50.addEventListener("click", function() {
-    errorMessage.classList.remove("alertMessage")
-    errorMessage.style.color = "red"
-    errorMessage.style.fontSize = "14px"
-})
+    numPeople = Number(inputPeople.value);
+    if(numPeople === 0) {
+        errorMessage.classList.remove("alertMessage")
+        errorMessage.style.color = "red"
+        errorMessage.style.fontSize = "14px"
+    } else {
+        errorMessage.classList.add("alertMessage")
+    }
+})    
 
 inputCustom.addEventListener("click", function() {
-    errorMessage.classList.remove("alertMessage")
-    errorMessage.style.color = "red"
-    errorMessage.style.fontSize = "14px"
+    numPeople = Number(inputPeople.value);
+    if(numPeople === 0) {
+        errorMessage.classList.remove("alertMessage")
+        errorMessage.style.color = "red"
+        errorMessage.style.fontSize = "14px"
+    } else {
+        errorMessage.classList.add("alertMessage")
+    }
 })
-
-getBillValue()  

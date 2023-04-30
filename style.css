@@ -64,10 +64,15 @@ label, .selectTip p {
     cursor: pointer;
 }
 
-.selectTip .tipValues a:hover {
+.selectTip .tipValues .btnPercentage:hover {
     background-color: hsl(185, 41%, 84%);
     color: hsl(183, 100%, 15%);
     transition: 0.3s;
+}
+
+.selectTip .tipValues .btnPercentageSelected {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
 }
 
 .selectTip .tipValues .inputCustom {

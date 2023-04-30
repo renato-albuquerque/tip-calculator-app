@@ -17,9 +17,71 @@ const btnReset = document.querySelector(".buttonReset");
 let customPercent = Number(inputCustom.value)
 let numberPeople = Number(inputPeople.value) */
 
+/* 
+let billValue = 0;
+let tipValue = 0; 
+let numberOfPeople = 0;
+ */
+
+function getBillValue() {
+    inputBill.addEventListener("change", function() {
+        billValue = Number(inputBill.value)
+    })
+}
+
+getBillValue()
+
+function getTip() {
+
+}
+
+function getTipCustom() {
+
+}
 
 
 
 
 
 
+
+
+
+
+btn5.addEventListener("click", function() {
+    errorMessage.classList.remove("alertMessage")
+    errorMessage.style.color = "red"
+    errorMessage.style.fontSize = "14px"
+})
+
+btn10.addEventListener("click", function() {
+    errorMessage.classList.remove("alertMessage")
+    errorMessage.style.color = "red"
+    errorMessage.style.fontSize = "14px"
+})
+
+btn15.addEventListener("click", function() {
+    errorMessage.classList.remove("alertMessage")
+    errorMessage.style.color = "red"
+    errorMessage.style.fontSize = "14px"
+})
+
+btn25.addEventListener("click", function() {
+    errorMessage.classList.remove("alertMessage")
+    errorMessage.style.color = "red"
+    errorMessage.style.fontSize = "14px"
+})
+
+btn50.addEventListener("click", function() {
+    errorMessage.classList.remove("alertMessage")
+    errorMessage.style.color = "red"
+    errorMessage.style.fontSize = "14px"
+})
+
+inputCustom.addEventListener("click", function() {
+    errorMessage.classList.remove("alertMessage")
+    errorMessage.style.color = "red"
+    errorMessage.style.fontSize = "14px"
+})
+
+getBillValue()  

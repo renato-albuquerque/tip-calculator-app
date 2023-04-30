@@ -111,7 +111,7 @@ input {
 /* Search about the solution above: 
 https://pt.stackoverflow.com/questions/541540/colocar-imagem-em-input-em-html-e-css */
 
-#alertMessage {
+.alertMessage {
     color: red;
     font-size: 1.4rem;
     display: none;

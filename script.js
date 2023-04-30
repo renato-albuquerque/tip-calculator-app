@@ -8,7 +8,7 @@ const btn25 = document.querySelector("#btn25");
 const btn50 = document.querySelector("#btn50");
 const inputCustom = document.querySelector(".inputCustom");
 const inputPeople = document.querySelector("#qtyPerPerson");
-const errorMessage = document.querySelector("#alertMessage");
+const errorMessage = document.querySelector(".alertMessage");
 const tipResult = document.querySelector("#tipResult"); 
 const totalResult = document.querySelector("#totalResult");
 const btnReset = document.querySelector(".buttonReset");
@@ -17,12 +17,7 @@ const btnReset = document.querySelector(".buttonReset");
 let customPercent = Number(inputCustom.value)
 let numberPeople = Number(inputPeople.value) */
 
-function value5() {
-    btn5.style.backgroundColor = "hsl(185, 41%, 84%)"
-    btn5.style.color = "hsl(183, 100%, 15%)"
-    fivePercent = (5/100)
-    console.log(fivePercent);
-}
+
 
 
 

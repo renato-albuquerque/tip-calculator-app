@@ -9,6 +9,7 @@ const btn50 = document.querySelector("#btn50");
 const inputCustom = document.querySelector(".inputCustom");
 const inputPeople = document.querySelector("#qtyPerPerson");
 const errorMessage = document.querySelector(".alertMessage");
+const borderMessage = document.querySelector(".alertBorder");
 const tipResult = document.querySelector("#tipResult"); 
 const totalResult = document.querySelector("#totalResult");
 const btnReset = document.querySelector(".buttonReset");
@@ -29,7 +30,7 @@ function getTipCustom() {
 
 let billAmount, numPeople, customPercent, tipTotal, tipPerson, totalPerson;
 
-// FUNCTIONS
+// Functions
 
 function resetBtn() {
     inputBill.value = "";
@@ -39,24 +40,22 @@ function resetBtn() {
         btn.classList.remove("btnPercentageSelected");
       }); */
     errorMessage.classList.add("alertMessage");
+    /* borderMessage.classList.add("borderMessage"); */
+    btnReset.classList.remove("buttonResetSelected-2");
     tipResult.textContent = "$0.00";  
     totalResult.textContent = "$0.00";    
 }
 
-// EVENTS
+// Events
 
 inputPeople.addEventListener("change", function() {
     numPeople = Number(inputPeople.value);
     if (numPeople !== 0) {
-      errorMessage.classList.add("alertMessage");
-      /* inputPeople.classList.remove("empty"); */
+        errorMessage.classList.add("alertMessage");
     } else if (numPeople === 0) {
         errorMessage.classList.remove("alertMessage");
-      /* inputPeople.classList.add("empty"); */
     }
   });
-
-btnReset.addEventListener("click", resetBtn);
 
 btn5.addEventListener("click", function() {
     numPeople = Number(inputPeople.value);
@@ -123,3 +122,18 @@ inputCustom.addEventListener("click", function() {
         errorMessage.classList.add("alertMessage")
     }
 })
+
+btnReset.addEventListener("click", resetBtn);
+
+inputBill.addEventListener("change", function () {
+        billAmount = Number(inputBill.value);
+        numPeople = Number(inputPeople.value);
+  
+    if (billAmount !== 0) {
+        btnReset.classList.add("buttonResetSelected-2");
+    }
+  
+    /* if (numPeople === 0) {   // Check after.
+        btnReset.classList.add("buttonResetSelected-1");
+    } */
+  });

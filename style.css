@@ -122,6 +122,11 @@ https://pt.stackoverflow.com/questions/541540/colocar-imagem-em-input-em-html-e-
     display: none;
 }
 
+.alertBorder {
+    border: 2px solid red;
+    display: none;
+}
+
 .alignPeopleAndMessage {
     display: flex;
     justify-content: space-between;
@@ -166,6 +171,16 @@ https://pt.stackoverflow.com/questions/541540/colocar-imagem-em-input-em-html-e-
     font-weight: 700;
     width: 29.5rem;
     cursor: pointer;
+}
+
+.buttonResetSelected-1 {
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+
+.buttonResetSelected-2 {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
 }
 
 footer {

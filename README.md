@@ -19,8 +19,8 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 Users should be able to:
 
 - View the optimal layout for the app depending on their device's screen size.
-- See hover states for all interactive elements on the page **(Some features in progress)**.
-- Calculate the correct tip and total cost of the bill per person. **(Some features in progress)**.
+- See hover states for all interactive elements on the page *(Some features in progress)*.
+- Calculate the correct tip and total cost of the bill per person. *(Some features in progress)*.
 
 ### - Screenshot (Mobile and Desktop Versions)
 

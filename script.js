@@ -6,7 +6,6 @@ const btn10 = document.querySelector("#btn10");
 const btn15 = document.querySelector("#btn15");
 const btn25 = document.querySelector("#btn25");
 const btn50 = document.querySelector("#btn50");
-/* const tipButtons = document.querySelector(".btnPercentage"); */
 const inputCustom = document.querySelector(".inputCustom");
 const inputPeople = document.querySelector("#qtyPerPerson");
 const errorMessage = document.querySelector(".alertMessage");

@@ -14,7 +14,7 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 
 ## Overview
 
-### The challenge
+### - The challenge
 
 Users should be able to:
 
@@ -22,19 +22,19 @@ Users should be able to:
 - See hover states for all interactive elements on the page **(Some features in progress)**.
 - Calculate the correct tip and total cost of the bill per person. **(Some features in progress)**.
 
-### Screenshot (Mobile and Desktop Versions)
+### - Screenshot (Mobile and Desktop Versions)
 
 ![screenshot](files/screencapture-mobileVersion.png)
-![screenshot](files/screencapture-mobileVersion.png)
+![screenshot](files/screencapture-desktopVersion.png)
 
-### Links
+### - Links
 
 - [Solution URL here](https://github.com/renato-albuquerque/tip-calculator-app)
 - [Live Site URL here](https://renato-albuquerque.github.io/tip-calculator-app/)
 
 ## My process
 
-### Built with
+### - Built with
 
 - Semantic HTML5 markup
 - CSS custom properties

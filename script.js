@@ -6,6 +6,7 @@ const btn10 = document.querySelector("#btn10");
 const btn15 = document.querySelector("#btn15");
 const btn25 = document.querySelector("#btn25");
 const btn50 = document.querySelector("#btn50");
+/* const tipButtons = document.querySelector(".btnPercentage"); */
 const inputCustom = document.querySelector(".inputCustom");
 const inputPeople = document.querySelector("#qtyPerPerson");
 const errorMessage = document.querySelector(".alertMessage");
@@ -14,23 +15,56 @@ const tipResult = document.querySelector("#tipResult");
 const totalResult = document.querySelector("#totalResult");
 const btnReset = document.querySelector(".buttonReset");
 
-/* function getBillValue() {
-    inputBill.addEventListener("change", function() {
-        billValue = Number(inputBill.value)
-    })
-}
-
-function getTip() {
-
-}
-
-function getTipCustom() {
-
-} */
-
-let billAmount, numPeople, customPercent, tipTotal, tipPerson, totalPerson;
+let billAmount, numPeople, tipValue, tipTotal, tipPerson, totalPerson;
 
 // Functions
+
+// Get the Values
+
+function getBillValue() {
+    inputBill.addEventListener('change', function() {
+        billAmount = Number(inputBill.value);
+        console.log(billAmount);
+    }
+  )}
+  getBillValue()
+
+function getNumberOfPeople() {
+    inputPeople.addEventListener('change', function() {
+        numPeople = Number(inputPeople.value);
+        console.log(numPeople);
+        calculate()
+    }
+  )}
+  getNumberOfPeople()
+
+function getTipTax() {
+
+}
+
+function getTipTaxCustom() {
+    inputCustom.addEventListener('change', function() {
+        tipValue = Number(inputCustom.value);
+        console.log(tipValue);
+        calculate()
+    }
+  )}
+  getTipTaxCustom()
+
+// Calculate
+
+function calculate() {
+    if(billAmount > 0 && tipValue > 0 && numPeople > 0) {
+    
+      let amountTip = billAmount * (tipValue / 100);
+      let amountTipByPerson = amountTip / numPeople;
+      let amount = billAmount + amountTip;
+      let amountByPerson = amount / numPeople;
+  
+      tipResult.textContent = `$${amountTipByPerson.toFixed(2)}`;
+      totalResult.textContent = `$${amountByPerson.toFixed(2)}`;
+    }
+  }
 
 function resetBtn() {
     inputBill.value = "";

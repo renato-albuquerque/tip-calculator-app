@@ -44,8 +44,8 @@ Users should be able to:
 
 ## Author
 
-- Website - [Personal Portfolio](https://portfolio-renatoalbuquerque.vercel.app/)
 - Digital Business Card - [Renato Albuquerque](https://portfolio-renatoalbuquerque.vercel.app/)
+- Website - [Personal Portfolio](https://portfolio-renatoalbuquerque.vercel.app/)
 - Frontend Mentor - [@renato-albuquerque](https://www.frontendmentor.io/profile/renato-albuquerque)
 - Linkedin - [renato-malbuquerque](https://www.linkedin.com/in/renato-malbuquerque/)
 - Discord - [Renato Albuquerque#0025](https://discordapp.com/users/992621595547938837)

@@ -28,6 +28,24 @@ function getBillValue() {
   )}
   getBillValue()
 
+
+// tip functions
+//function getTipTax() {
+//}
+btn5.addEventListener("click", function() {
+    let test = Number(btn5.value);
+    console.log(test);
+})
+
+
+function getTipTaxCustom() {
+    inputCustom.addEventListener('change', function() {
+        tipValue = Number(inputCustom.value);
+        console.log(tipValue);
+    }
+)}
+getTipTaxCustom()
+
 function getNumberOfPeople() {
     inputPeople.addEventListener('change', function() {
         numPeople = Number(inputPeople.value);
@@ -36,19 +54,6 @@ function getNumberOfPeople() {
     }
   )}
   getNumberOfPeople()
-
-function getTipTax() {
-
-}
-
-function getTipTaxCustom() {
-    inputCustom.addEventListener('change', function() {
-        tipValue = Number(inputCustom.value);
-        console.log(tipValue);
-        calculate()
-    }
-  )}
-  getTipTaxCustom()
 
 // Calculate
 

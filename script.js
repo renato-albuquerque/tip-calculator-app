@@ -14,29 +14,63 @@ const tipResult = document.querySelector("#tipResult");
 const totalResult = document.querySelector("#totalResult");
 const btnReset = document.querySelector(".buttonReset");
 
-let billAmount, numPeople, tipValue, tipTotal, tipPerson, totalPerson;
+let billAmount, numPeople, tipValue5, tipValue10, tipValue15, tipValue25, tipValue50, tipValue, tipTotal, tipPerson, totalPerson;
 
 // Functions
 
 // Get the Values
+
+    // Bill value
 
 function getBillValue() {
     inputBill.addEventListener('change', function() {
         billAmount = Number(inputBill.value);
         console.log(billAmount);
     }
-  )}
-  getBillValue()
+)}
+getBillValue()
 
+    // tip values
 
-// tip functions
-//function getTipTax() {
-//}
-btn5.addEventListener("click", function() {
-    let test = Number(btn5.value);
-    console.log(test);
-})
+function getTipTax5() {
+    btn5.addEventListener("click", function() {
+        tipValue5 = Number(btn5.value);
+        console.log(tipValue5);
+    })
+}
+getTipTax5()
 
+function getTipTax10() {
+    btn10.addEventListener("click", function() {
+        tipValue10 = Number(btn10.value);
+        console.log(tipValue10);
+    })
+}
+getTipTax10()
+
+function getTipTax15() {
+    btn15.addEventListener("click", function() {
+        tipValue15 = Number(btn15.value);
+        console.log(tipValue15);
+    })
+}
+getTipTax15()
+
+function getTipTax25() {
+    btn25.addEventListener("click", function() {
+        tipValue25 = Number(btn25.value);
+        console.log(tipValue25);
+    })
+}
+getTipTax25()
+
+function getTipTax50() {
+    btn50.addEventListener("click", function() {
+        tipValue50 = Number(btn50.value);
+        console.log(tipValue50);
+    })
+}
+getTipTax50()
 
 function getTipTaxCustom() {
     inputCustom.addEventListener('change', function() {
@@ -45,6 +79,8 @@ function getTipTaxCustom() {
     }
 )}
 getTipTaxCustom()
+
+    // Number of people value
 
 function getNumberOfPeople() {
     inputPeople.addEventListener('change', function() {

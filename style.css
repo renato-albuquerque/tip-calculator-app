@@ -84,7 +84,6 @@ label, .selectTip p {
     border-radius: 0.5rem;
     padding: 1rem;
     text-align: center;
-    /* filter: opacity(40%); */
 }
 
 input {
@@ -112,9 +111,6 @@ input {
     background-size: 2.4rem;  
     filter: opacity(40%); 
 }
-
-/* Search about the solution above: 
-https://pt.stackoverflow.com/questions/541540/colocar-imagem-em-input-em-html-e-css */
 
 .alertMessage {
     color: red;

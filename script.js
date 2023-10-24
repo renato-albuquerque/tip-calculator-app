@@ -209,6 +209,8 @@ btn5.addEventListener("click", function() {
     btn25.style.color = "white"
     btn50.style.backgroundColor = "#00494d"
     btn50.style.color = "white"
+    inputCustom.style.backgroundColor = "#00494d"
+    inputCustom.style.color = "white"
 })
 
 btn10.addEventListener("click", function() {
@@ -232,6 +234,8 @@ btn10.addEventListener("click", function() {
     btn25.style.color = "white"
     btn50.style.backgroundColor = "#00494d"
     btn50.style.color = "white"
+    inputCustom.style.backgroundColor = "#00494d"
+    inputCustom.style.color = "white"
 })
 
 btn15.addEventListener("click", function() {
@@ -255,6 +259,8 @@ btn15.addEventListener("click", function() {
     btn25.style.color = "white"
     btn50.style.backgroundColor = "#00494d"
     btn50.style.color = "white"
+    inputCustom.style.backgroundColor = "#00494d"
+    inputCustom.style.color = "white"
 })
 
 btn25.addEventListener("click", function() {
@@ -278,6 +284,8 @@ btn25.addEventListener("click", function() {
     btn15.style.color = "white"
     btn50.style.backgroundColor = "#00494d"
     btn50.style.color = "white"
+    inputCustom.style.backgroundColor = "#00494d"
+    inputCustom.style.color = "white"
 })
 
 btn50.addEventListener("click", function() {
@@ -301,6 +309,8 @@ btn50.addEventListener("click", function() {
     btn15.style.color = "white"
     btn25.style.backgroundColor = "#00494d"
     btn25.style.color = "white"
+    inputCustom.style.backgroundColor = "#00494d"
+    inputCustom.style.color = "white"
 })    
 
 inputCustom.addEventListener("click", function() {
@@ -312,6 +322,20 @@ inputCustom.addEventListener("click", function() {
     } else {
         errorMessage.classList.add("alertMessage")
     }
+
+    inputCustom.style.backgroundColor = "#26c0ab"
+    inputCustom.style.color = "#00494d"
+
+    btn5.style.backgroundColor = "#00494d"
+    btn5.style.color = "white"
+    btn10.style.backgroundColor = "#00494d"
+    btn10.style.color = "white"
+    btn15.style.backgroundColor = "#00494d"
+    btn15.style.color = "white"
+    btn25.style.backgroundColor = "#00494d"
+    btn25.style.color = "white"
+    btn50.style.backgroundColor = "#00494d"
+    btn50.style.color = "white"
 })
 
 inputBill.addEventListener("change", function () {

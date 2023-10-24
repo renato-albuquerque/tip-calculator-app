@@ -161,10 +161,23 @@ function resetBtn() {
     errorMessage.classList.add("alertMessage");
     btnReset.classList.remove("buttonResetSelected-2");
     tipResult.textContent = "$0.00";  
-    totalResult.textContent = "$0.00";    
+    totalResult.textContent = "$0.00";  
+
+    btn5.style.backgroundColor = "#00494d"
+    btn5.style.color = "white"
+    btn10.style.backgroundColor = "#00494d"
+    btn10.style.color = "white"
+    btn15.style.backgroundColor = "#00494d"
+    btn15.style.color = "white"
+    btn25.style.backgroundColor = "#00494d"
+    btn25.style.color = "white"
+    btn50.style.backgroundColor = "#00494d"
+    btn50.style.color = "white"
 }
 
 // Events
+
+btnReset.addEventListener("click", resetBtn);
 
 inputPeople.addEventListener("change", function() {
     numPeople = Number(inputPeople.value);
@@ -184,6 +197,18 @@ btn5.addEventListener("click", function() {
     } else {
         errorMessage.classList.add("alertMessage")
     }
+
+    btn5.style.backgroundColor = "#26c0ab"
+    btn5.style.color = "#00494d"
+
+    btn10.style.backgroundColor = "#00494d"
+    btn10.style.color = "white"
+    btn15.style.backgroundColor = "#00494d"
+    btn15.style.color = "white"
+    btn25.style.backgroundColor = "#00494d"
+    btn25.style.color = "white"
+    btn50.style.backgroundColor = "#00494d"
+    btn50.style.color = "white"
 })
 
 btn10.addEventListener("click", function() {
@@ -195,6 +220,18 @@ btn10.addEventListener("click", function() {
     } else {
         errorMessage.classList.add("alertMessage")
     }
+
+    btn10.style.backgroundColor = "#26c0ab"
+    btn10.style.color = "#00494d"
+
+    btn5.style.backgroundColor = "#00494d"
+    btn5.style.color = "white"
+    btn15.style.backgroundColor = "#00494d"
+    btn15.style.color = "white"
+    btn25.style.backgroundColor = "#00494d"
+    btn25.style.color = "white"
+    btn50.style.backgroundColor = "#00494d"
+    btn50.style.color = "white"
 })
 
 btn15.addEventListener("click", function() {
@@ -206,6 +243,18 @@ btn15.addEventListener("click", function() {
     } else {
         errorMessage.classList.add("alertMessage")
     }
+
+    btn15.style.backgroundColor = "#26c0ab"
+    btn15.style.color = "#00494d"
+
+    btn5.style.backgroundColor = "#00494d"
+    btn5.style.color = "white"
+    btn10.style.backgroundColor = "#00494d"
+    btn10.style.color = "white"
+    btn25.style.backgroundColor = "#00494d"
+    btn25.style.color = "white"
+    btn50.style.backgroundColor = "#00494d"
+    btn50.style.color = "white"
 })
 
 btn25.addEventListener("click", function() {
@@ -217,6 +266,18 @@ btn25.addEventListener("click", function() {
     } else {
         errorMessage.classList.add("alertMessage")
     }
+
+    btn25.style.backgroundColor = "#26c0ab"
+    btn25.style.color = "#00494d"
+
+    btn5.style.backgroundColor = "#00494d"
+    btn5.style.color = "white"
+    btn10.style.backgroundColor = "#00494d"
+    btn10.style.color = "white"
+    btn15.style.backgroundColor = "#00494d"
+    btn15.style.color = "white"
+    btn50.style.backgroundColor = "#00494d"
+    btn50.style.color = "white"
 })
 
 btn50.addEventListener("click", function() {
@@ -228,6 +289,18 @@ btn50.addEventListener("click", function() {
     } else {
         errorMessage.classList.add("alertMessage")
     }
+
+    btn50.style.backgroundColor = "#26c0ab"
+    btn50.style.color = "#00494d"
+
+    btn5.style.backgroundColor = "#00494d"
+    btn5.style.color = "white"
+    btn10.style.backgroundColor = "#00494d"
+    btn10.style.color = "white"
+    btn15.style.backgroundColor = "#00494d"
+    btn15.style.color = "white"
+    btn25.style.backgroundColor = "#00494d"
+    btn25.style.color = "white"
 })    
 
 inputCustom.addEventListener("click", function() {
@@ -250,4 +323,3 @@ inputBill.addEventListener("change", function () {
     }
 });
 
-btnReset.addEventListener("click", resetBtn);

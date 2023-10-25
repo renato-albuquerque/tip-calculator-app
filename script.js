@@ -94,7 +94,7 @@ getNumberOfPeople()
     // Calculate
 
 function calculate() {
-    if(tipValue5 == 5) {
+    if(billAmount > 0 && tipValue5 == 5 && numPeople > 0) {
         let amountTip = billAmount * (tipValue5 / 100);
         let amountTipByPerson = amountTip / numPeople;
         let amount = billAmount + amountTip;
@@ -103,7 +103,7 @@ function calculate() {
         tipResult.textContent = `$${amountTipByPerson.toFixed(2)}`;
         totalResult.textContent = `$${amountByPerson.toFixed(2)}`;
 
-    }   else if(tipValue10 == 10) {
+    }   else if(billAmount > 0 && tipValue10 == 10 && numPeople > 0) {
         let amountTip = billAmount * (tipValue10 / 100);
         let amountTipByPerson = amountTip / numPeople;
         let amount = billAmount + amountTip;
@@ -112,7 +112,7 @@ function calculate() {
         tipResult.textContent = `$${amountTipByPerson.toFixed(2)}`;
         totalResult.textContent = `$${amountByPerson.toFixed(2)}`;
 
-    }   else if(tipValue15 == 15) {
+    }   else if(billAmount > 0 && numPeople > 0) {
         let amountTip = billAmount * (tipValue15 / 100);
         let amountTipByPerson = amountTip / numPeople;
         let amount = billAmount + amountTip;
@@ -121,7 +121,7 @@ function calculate() {
         tipResult.textContent = `$${amountTipByPerson.toFixed(2)}`;
         totalResult.textContent = `$${amountByPerson.toFixed(2)}`;
 
-    }   else if(tipValue25 == 25) {
+    }   else if(billAmount > 0 && numPeople > 0) {
         let amountTip = billAmount * (tipValue25 / 100);
         let amountTipByPerson = amountTip / numPeople;
         let amount = billAmount + amountTip;
@@ -130,7 +130,7 @@ function calculate() {
         tipResult.textContent = `$${amountTipByPerson.toFixed(2)}`;
         totalResult.textContent = `$${amountByPerson.toFixed(2)}`;
 
-    }   else if(tipValue50 == 50) {
+    }   else if(billAmount > 0 && numPeople > 0) {
         let amountTip = billAmount * (tipValue50 / 100);
         let amountTipByPerson = amountTip / numPeople;
         let amount = billAmount + amountTip;
@@ -139,7 +139,7 @@ function calculate() {
         tipResult.textContent = `$${amountTipByPerson.toFixed(2)}`;
         totalResult.textContent = `$${amountByPerson.toFixed(2)}`;
 
-    }   else if(tipValue > 0) {
+    }   else if(billAmount > 0 && numPeople > 0) {
     
         let amountTip = billAmount * (tipValue / 100);
         let amountTipByPerson = amountTip / numPeople;

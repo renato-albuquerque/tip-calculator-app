@@ -112,7 +112,7 @@ function calculate() {
         tipResult.textContent = `$${amountTipByPerson.toFixed(2)}`;
         totalResult.textContent = `$${amountByPerson.toFixed(2)}`;
 
-    }   else if(billAmount > 0 && numPeople > 0) {
+    }   else if(billAmount > 0 && tipValue15 == 15 && numPeople > 0) {
         let amountTip = billAmount * (tipValue15 / 100);
         let amountTipByPerson = amountTip / numPeople;
         let amount = billAmount + amountTip;
@@ -121,7 +121,7 @@ function calculate() {
         tipResult.textContent = `$${amountTipByPerson.toFixed(2)}`;
         totalResult.textContent = `$${amountByPerson.toFixed(2)}`;
 
-    }   else if(billAmount > 0 && numPeople > 0) {
+    }   else if(billAmount > 0 && tipValue25 == 25 && numPeople > 0) {
         let amountTip = billAmount * (tipValue25 / 100);
         let amountTipByPerson = amountTip / numPeople;
         let amount = billAmount + amountTip;
@@ -130,7 +130,7 @@ function calculate() {
         tipResult.textContent = `$${amountTipByPerson.toFixed(2)}`;
         totalResult.textContent = `$${amountByPerson.toFixed(2)}`;
 
-    }   else if(billAmount > 0 && numPeople > 0) {
+    }   else if(billAmount > 0 && tipValue50 == 50 && numPeople > 0) {
         let amountTip = billAmount * (tipValue50 / 100);
         let amountTipByPerson = amountTip / numPeople;
         let amount = billAmount + amountTip;
